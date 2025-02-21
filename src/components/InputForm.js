@@ -11,7 +11,7 @@ const InputForm = () => {
   const handleSubmit = async () => {
     try {
       const parsedData = JSON.parse(inputData);
-      const res = await axios.post("https://your-backend-url/bfhl", parsedData);
+      const res = await axios.post("https://backend-ri7w.onrender.com", parsedData);
       setResponse(res.data);
     } catch (error) {
       alert("Invalid JSON or API error.");
